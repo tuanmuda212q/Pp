@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPin x Mobile Legends - Claim Your Mythic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #120224;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background: #1a0833;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff007f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff007f;
+        }
+
+        /* Container Main */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Banner Wrapper */
+        .banner-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+            border: 2px solid #3d1466;
+            margin-bottom: 30px;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Content Section */
+        .promo-content {
+            background: #1d0a38;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .promo-content h1 {
+            color: #ff007f;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .promo-content p {
+            color: #d1c4e9;
+            margin-bottom: 20px;
+        }
+
+        /* Form Section */
+        .claim-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #b39ddb;
+        }
+
+        .input-group input {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #3d1466;
+            background: #0d021a;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #ff007f;
+        }
+
+        .btn-claim {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #ff007f, #7928ca);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-claim:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #0b0117;
+            color: #7e57c2;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">UNIPIN x MLBB</div>
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Promo</a>
+            <a href="#">Bantuan</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Banner Promo -->
+        <div class="banner-container">
+            <img src="17539.jpg" alt="UniPin Claim Your Mythic Banner">
+        </div>
+
+        <!-- Detail Promo & Form -->
+        <div class="promo-content">
+            <h1>Claim Your Mythic Event</h1>
+            <p>Top up Diamond Mobile Legends kamu di UniPin sekarang juga dan dapatkan kesempatan klaim hadiah eksklusif periode <strong>26 - 30 April 2020</strong>!</p>
+            
+            <form class="claim-form">
+                <div class="input-group">
+                    <label for="user-id">User ID Mobile Legends</label>
+                    <input type="text" id="user-id" placeholder="Masukkan User ID (cth: 12345678)" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="zone-id">Zone ID</label>
+                    <input type="text" id="zone-id" placeholder="Masukkan Zone ID (cth: 1234)" required>
+                </div>
+
+                <button type="submit" class="btn-claim">KLAIM HADIAH</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 UniPin & Mobile Legends: Bang Bang. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
